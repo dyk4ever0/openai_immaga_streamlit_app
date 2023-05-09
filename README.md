@@ -1,21 +1,29 @@
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/demo-self-driving)
+# Autobiography Generator
 
-# Streamlit Demo: The Udacity Self-driving Car Image Browser
+This is a simple streamlit application that generates a 500-word draft of an autobiography based on user input. The app uses the OpenAI API and the immaga.com API to extract tags from user-uploaded photos and generate text based on the filtered tags and a user-defined prompt.
 
-This project demonstrates the [Udacity self-driving-car dataset](https://github.com/udacity/self-driving-car) and [YOLO object detection](https://pjreddie.com/darknet/yolo) into an interactive [Streamlit](https://streamlit.io) app.
+## Installation
 
-The complete demo is [implemented in less than 300 lines of Python](https://github.com/streamlit/demo-self-driving/blob/master/streamlit_app.py) and illustrates all the major building blocks of Streamlit.
+To run the app, you will need to have Python 3.7 or higher installed on your machine. You can install the required packages by running the following command:
 
-![Making-of Animation](https://raw.githubusercontent.com/streamlit/demo-self-driving/master/av_final_optimized.gif "Making-of Animation")
-
-## How to run this demo
-```
-pip install --upgrade streamlit opencv-python
-streamlit run https://raw.githubusercontent.com/streamlit/demo-self-driving/master/streamlit_app.py
+```bash
+pip install -r requirements.txt
 ```
 
-### Questions? Comments?
+## Usage
 
-Please ask in the [Streamlit community](https://discuss.streamlit.io).
+To start the app, run the following command in your terminal:
 
+```bash
+streamlit run app.py
+```
 
+Once the app is running, you can upload a photo and modify the generated tags as needed. You can then enter a prompt and click the 'Generate' button to generate a 500-word draft of an autobiography. The generated text will be displayed on the screen in Korean and can be edited using the text editor. You can also download the finished autobiography text as a .docx file with photos.
+
+## Contributing
+
+If you would like to contribute to the project, please fork the repository and submit a pull request. We welcome all contributions!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
